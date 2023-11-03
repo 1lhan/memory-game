@@ -1,0 +1,153 @@
+html * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gabarito", sans-serif;
+}
+html .btn {
+  padding: 0.6rem 0.75rem;
+  cursor: pointer;
+  border: none;
+  background: #fbbf24;
+  color: #fff;
+  border-radius: 3px;
+}
+html .btn:hover {
+  box-shadow: 0px 0px 16px 2px #fde68a;
+}
+html .custom-select {
+  position: relative;
+  background: #fbbf24;
+  font-size: 0.95rem;
+  z-index: 11;
+  color: #fff;
+}
+html .custom-select:hover .values-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+html .custom-select .selected-value {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  height: 100%;
+}
+html .custom-select .values-div {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: auto;
+  background: #fcd34d;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+html .custom-select .values-div span {
+  width: 100%;
+  padding: 0.5rem;
+  color: #fff;
+}
+html .custom-select .values-div span:hover {
+  background: #fde68a;
+}
+
+.memory-game-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  max-width: 50rem;
+  background: #ffedd5;
+  border-radius: 3px;
+}
+.memory-game-page .header {
+  color: #fbbf24;
+}
+.memory-game-page .game-settings-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.memory-game-page .click-count-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: #fde68a;
+  padding: 0.5rem;
+}
+.memory-game-page .click-count-div span:nth-of-type(2) {
+  font-weight: 600;
+}
+.memory-game-page .memory-game-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 36rem;
+  width: 100vw;
+  height: auto;
+  gap: 0.3rem 1.33%;
+  background: #fbbf24;
+  padding: 1rem;
+}
+.memory-game-page .memory-game-div .emoji {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 24%;
+  font-size: 1.5rem;
+}
+.memory-game-page .memory-game-div .emoji .emoji-inner.turn {
+  transform: rotateY(180deg);
+}
+.memory-game-page .memory-game-div .emoji .emoji-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+}
+.memory-game-page .memory-game-div .emoji .emoji-inner .emoji-front,
+.memory-game-page .memory-game-div .emoji .emoji-inner .emoji-back {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+.memory-game-page .memory-game-div .emoji .emoji-inner .emoji-front {
+  background: #fde68a;
+  border: none;
+}
+.memory-game-page .memory-game-div .emoji .emoji-inner .emoji-back {
+  transform: rotateY(180deg);
+  background: #fb923c;
+}/*# sourceMappingURL=index.css.map */
